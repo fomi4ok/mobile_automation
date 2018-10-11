@@ -25,7 +25,7 @@ public class MainClassTest {
    @Test
   public void testGetClassString() {
 
-     Assert.assertTrue("String doesn't contains word hello", (mc.getClassString().contains("Hello") || mc.getClassString().contains("hello")  )== true);
+     Assert.assertTrue("String doesn't contain word hello", (mc.getClassString().contains("Hello") || mc.getClassString().contains("hello")  )== true);
   }
 
 
