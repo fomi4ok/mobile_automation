@@ -11,6 +11,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
+import java.util.List;
+
+import static org.junit.Assert.assertTrue;
 
 public class FirstTest {
 
@@ -124,6 +127,91 @@ public class FirstTest {
 
   }
 
+  @Test
+  public void testSearchInput(){
+
+    waitForElementAndClick(
+            By.id("org.wikipedia:id/search_container"),
+            "Cannot find 'Search wikipedia' input",
+            5);
+
+    WebElement search_item = waitForElementPresent(By.id("org.wikipedia:id/search_src_text"),
+            "Search box is present",
+            5);
+    String search_input = search_item.getAttribute("text");
+
+    Assert.assertEquals("Search not found", "Search…" , search_input);
+
+  }
+
+  @Test
+
+  public void testSearchAndCancel() {
+
+    waitForElementAndClick(
+            By.id("org.wikipedia:id/search_container"),
+            "Cannot find 'Search wikipedia' input",
+            5);
+
+    waitForElementAndSendKeys(
+            By.xpath("//*[contains(@text,'Search…')]"),
+            "Java",
+            "cannot find search input",
+            5);
+
+    waitForElementPresent(
+            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+            "cannot find 'Object-oriented programming language' searching by 'java'",
+            5)
+
+    ;
+    waitForElementPresent(
+            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Island of Indonesia']"),
+            "cannot find 'Island of Indonesia' searching by 'java'",
+            5)
+
+    ;
+    waitForElementClear(
+            By.id("search_src_text"), "cannot find search field", 5
+    );
+
+    waitForElementAndClick(
+            By.id("org.wikipedia:id/search_close_btn"),
+            "Cannot find 'x' button",
+            5 );
+
+    waitForElementNotPresent(
+            By.id("org.wikipedia:id/search_close_btn"),
+            " 'x' is still present",
+            5);
+
+
+  }
+
+  @Test
+
+  public void testSearchItemPresent() {
+
+    waitForElementAndClick(
+            By.id("org.wikipedia:id/search_container"),
+            "Cannot find 'Search wikipedia' input",
+            5);
+
+    waitForElementAndSendKeys(
+            By.xpath("//*[contains(@text,'Search…')]"),
+            "Java",
+            "cannot find search input",
+            5);
+
+    for (int i = 0; i< 6; i++ ) {
+      List<WebElement> articles = driver.findElements(By.id("org.wikipedia:id/page_list_item_title"));
+      String article_title = articles.get(i).getText();
+      System.out.println(article_title);
+
+      assertTrue("article title doesn't contain 'java'", article_title.contains("Java") == true);
+
+    }
+}
 
   private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds) {
 
