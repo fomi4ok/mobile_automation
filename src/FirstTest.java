@@ -146,6 +146,11 @@ public class FirstTest {
 
   @Test
 
+  //Ex3 Ищет какое-то слово
+//  Убеждается, что найдено несколько статей
+//  Отменяет поиск
+//  Убеждается, что результат поиска пропал
+
   public void testSearchAndCancel() {
 
     waitForElementAndClick(
@@ -159,18 +164,10 @@ public class FirstTest {
             "cannot find search input",
             5);
 
-    waitForElementPresent(
-            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
-            "cannot find 'Object-oriented programming language' searching by 'java'",
-            5)
+    List<WebElement> articles = driver.findElements(By.id("org.wikipedia:id/page_list_item_title"));
+    int count = articles.size();
+    Assert.assertTrue("less than 2 articles found",count >= 2 == true);
 
-    ;
-    waitForElementPresent(
-            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Island of Indonesia']"),
-            "cannot find 'Island of Indonesia' searching by 'java'",
-            5)
-
-    ;
     waitForElementClear(
             By.id("search_src_text"), "cannot find search field", 5
     );
@@ -189,7 +186,8 @@ public class FirstTest {
   }
 
   @Test
-
+ // EX 4 Ищет какое-то слово
+  //Убеждается, что в каждом результате поиска есть это слово.
   public void testSearchItemPresent() {
 
     waitForElementAndClick(
@@ -203,11 +201,11 @@ public class FirstTest {
             "cannot find search input",
             5);
 
-    for (int i = 0; i< 6; i++ ) {
-      List<WebElement> articles = driver.findElements(By.id("org.wikipedia:id/page_list_item_title"));
-      String article_title = articles.get(i).getText();
-      System.out.println(article_title);
 
+    List<WebElement> articles = driver.findElements(By.id("org.wikipedia:id/page_list_item_title"));
+    int count = articles.size();
+    for (int i = 0; i< count; i++ ) {
+      String article_title = articles.get(i).getText();
       assertTrue("article title doesn't contain 'java'", article_title.contains("Java") == true);
 
     }

@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98c92693-7bc7-48e0-a3ea-e0e0466b38fa" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/mobile_automation/FirstTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/mobile_automation/MainClass.class" afterPath="$PROJECT_DIR$/out/production/mobile_automation/MainClass.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FirstTest.java" afterPath="$PROJECT_DIR$/src/FirstTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainClass.java" afterPath="$PROJECT_DIR$/src/MainClass.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +28,7 @@
       <file leaf-file-name="MainClassTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainClassTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
+            <state relative-caret-position="480">
               <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -53,8 +50,8 @@
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="212" column="5" lean-forward="true" selection-start-line="212" selection-start-column="5" selection-end-line="212" selection-end-column="5" />
+            <state relative-caret-position="433">
+              <caret line="152" column="2" lean-forward="false" selection-start-line="152" selection-start-column="2" selection-end-line="152" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.testSearchItemPresent">
+  <component name="RunManager" selected="JUnit.FirstTest.testSearchAndCancel">
     <configuration name="FirstTest.testCompareArticleTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="mobile_automation" />
@@ -356,9 +353,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest.testSearchItemPresent" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MainClassTest.testGetClassString" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.testSearchAndCancel" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest.testSearchAndCancel" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.testSearchItemPresent" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MainClassTest.testGetClassString" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTest.testSearchInput" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareArticleTitle" />
       </list>
@@ -381,35 +378,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_testSearchItemPresent - 2018.10.18 at 22h 12m 16s.xml">
-      <configuration name="FirstTest.testSearchItemPresent" configurationId="JUnit" />
+    <history-entry file="FirstTest_testSearchAndCancel - 2018.10.21 at 13h 26m 44s.xml">
+      <configuration name="FirstTest.testSearchAndCancel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSearchItemPresent - 2018.10.18 at 22h 19m 17s.xml">
-      <configuration name="FirstTest.testSearchItemPresent" configurationId="JUnit" />
+    <history-entry file="FirstTest_testSearchAndCancel - 2018.10.21 at 13h 27m 36s.xml">
+      <configuration name="FirstTest.testSearchAndCancel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSearchItemPresent - 2018.10.18 at 22h 21m 23s.xml">
-      <configuration name="FirstTest.testSearchItemPresent" configurationId="JUnit" />
+    <history-entry file="FirstTest_testSearchAndCancel - 2018.10.21 at 13h 28m 28s.xml">
+      <configuration name="FirstTest.testSearchAndCancel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSearchItemPresent - 2018.10.18 at 22h 21m 55s.xml">
-      <configuration name="FirstTest.testSearchItemPresent" configurationId="JUnit" />
+    <history-entry file="FirstTest_testSearchAndCancel - 2018.10.21 at 13h 29m 07s.xml">
+      <configuration name="FirstTest.testSearchAndCancel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSearchItemPresent - 2018.10.18 at 22h 25m 55s.xml">
-      <configuration name="FirstTest.testSearchItemPresent" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testSearchItemPresent - 2018.10.18 at 22h 27m 38s.xml">
-      <configuration name="FirstTest.testSearchItemPresent" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testSearchItemPresent - 2018.10.18 at 22h 28m 17s.xml">
-      <configuration name="FirstTest.testSearchItemPresent" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testSearchItemPresent - 2018.10.18 at 22h 28m 55s.xml">
-      <configuration name="FirstTest.testSearchItemPresent" configurationId="JUnit" />
+    <history-entry file="FirstTest_testSearchAndCancel - 2018.10.21 at 13h 30m 21s.xml">
+      <configuration name="FirstTest.testSearchAndCancel" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FirstTest_testSearchItemPresent - 2018.10.18 at 22h 29m 28s.xml">
       <configuration name="FirstTest.testSearchItemPresent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainClassTest_testGetClassString - 2018.10.18 at 22h 17m 20s.xml">
-      <configuration name="MainClassTest.testGetClassString" configurationId="JUnit" />
+    <history-entry file="FirstTest_testSearchItemPresent - 2018.10.21 at 13h 16m 28s.xml">
+      <configuration name="FirstTest.testSearchItemPresent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testSearchItemPresent - 2018.10.21 at 13h 17m 36s.xml">
+      <configuration name="FirstTest.testSearchItemPresent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testSearchItemPresent - 2018.10.21 at 13h 18m 17s.xml">
+      <configuration name="FirstTest.testSearchItemPresent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testSearchItemPresent - 2018.10.21 at 13h 19m 17s.xml">
+      <configuration name="FirstTest.testSearchItemPresent" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -424,9 +421,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15598549" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22174536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -449,7 +446,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -582,16 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainClassTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile_automation.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -600,10 +587,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainClassTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="212" column="5" lean-forward="true" selection-start-line="212" selection-start-column="5" selection-end-line="212" selection-end-column="5" />
+        <state relative-caret-position="433">
+          <caret line="152" column="2" lean-forward="false" selection-start-line="152" selection-start-column="2" selection-end-line="152" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
