@@ -206,7 +206,7 @@ public class FirstTest {
     int count = articles.size();
     for (int i = 0; i< count; i++ ) {
       String article_title = articles.get(i).getText();
-      assertTrue("article title doesn't contain 'java'", article_title.contains("Java") == true);
+      assertTrue("article title doesn't contain 'java'", article_title.contains("Java") || article_title.contains("java"));
 
     }
 }
