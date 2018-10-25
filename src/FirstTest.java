@@ -470,7 +470,7 @@ public class FirstTest {
 
     String expected_title = "JavaScript";
 
-   Assert.assertEquals("", expected_title, actual_title);
+   Assert.assertEquals("Title doesn't match", expected_title, actual_title);
 
   }
 
