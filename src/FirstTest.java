@@ -6,9 +6,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -474,6 +472,178 @@ public class FirstTest {
 
   }
 
+  @Test
+
+  public void testAmountOfNotEmptySearch() {
+
+    waitForElementAndClick(
+            By.id("org.wikipedia:id/search_container"),
+            "Cannot find 'Search wikipedia' input",
+            5);
+
+    String search_line = "linkin park discography";
+
+    waitForElementAndSendKeys(
+            By.xpath("//*[contains(@text,'Search…')]"),
+            search_line,
+            "cannot find search input",
+            5
+    );
+
+    String search_result_locator =
+            "//*[@resource-id='org.wikipedia:id/search_results_list']/*[@resource-id='org.wikipedia:id/page_list_item_container']";
+    waitForElementPresent(
+            By.xpath(search_result_locator),
+            "Cannot find anything by request " + search_line,
+            15);
+
+    int amount_of_search_results = getAmmountOfElements(By.xpath(search_result_locator));
+
+    Assert.assertTrue("We found too few results",
+            amount_of_search_results >0);
+
+  }
+
+  @Test
+
+  public void testAmountOfEmptySearch() {
+
+    waitForElementAndClick(
+            By.id("org.wikipedia:id/search_container"),
+            "Cannot find 'Search wikipedia' input",
+            5);
+
+    String search_line = "dfpfpfj";
+
+    waitForElementAndSendKeys(
+            By.xpath("//*[contains(@text,'Search…')]"),
+            search_line,
+            "cannot find search input",
+            5);
+
+    String search_result_locator =
+            "//*[@resource-id='org.wikipedia:id/search_results_list']/*[@resource-id='org.wikipedia:id/page_list_item_container']";
+
+    String empty_result_label = "//*[@text='No results found']";
+
+    waitForElementPresent(
+            By.xpath(empty_result_label),
+            "cannot find empty result label by the request " + search_line,
+            15
+    );
+
+    assertElementNotPresent(
+            By.xpath(search_result_locator),
+                    "We found some results by request" + search_line);
+
+  }
+
+  @Test
+
+  public void testElementWithTitle() {
+
+    waitForElementAndClick(
+            By.id("org.wikipedia:id/search_container"),
+            "Cannot find 'Search wikipedia' input",
+            5);
+
+    String search_line = "Java";
+
+    waitForElementAndSendKeys(
+            By.xpath("//*[contains(@text,'Search…')]"),
+            search_line,
+            "cannot find search input",
+            5);
+
+    waitForElementAndClick(
+            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Programming language']"),
+            "cannot find 'programming language' searching by 'java'",
+            5);
+
+    String article_title = "org.wikipedia:id/view_page_title_text";
+
+
+    assertElementPresent(By.id(article_title),
+            "We didnt' find any results by request " + search_line);
+
+
+  }
+
+  @Test
+  public void testChangeScreenOrientationOnSearchResults() {
+    waitForElementAndClick(
+            By.id("org.wikipedia:id/search_container"),
+            "Cannot find 'Search wikipedia' input",
+            5);
+
+    String search_line = "Java";
+
+    waitForElementAndSendKeys(
+            By.xpath("//*[contains(@text,'Search…')]"),
+            search_line,
+            "cannot find search input",
+            5);
+
+    waitForElementAndClick(
+            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+            "cannot find 'Object-oriented programming language' topic searching by " + search_line,
+            15);
+
+    String title_before_rotation = waitForElementAndGetAttribute(
+            By.id("org.wikipedia:id/view_page_title_text"),
+            "text",
+            "Cannot find title of article ",
+            15
+
+    );
+
+    driver.rotate(ScreenOrientation.LANDSCAPE);
+
+    String title_after_rotation = waitForElementAndGetAttribute(
+            By.id("org.wikipedia:id/view_page_title_text"),
+            "text",
+            "Cannot find title of article in landscape ",
+            15
+
+    );
+
+    Assert.assertEquals("Article title have been changed after screen rotate", title_before_rotation, title_after_rotation);
+
+    driver.rotate(ScreenOrientation.PORTRAIT);
+
+
+    String title_after_second_rotation = waitForElementAndGetAttribute(
+            By.id("org.wikipedia:id/view_page_title_text"),
+            "text",
+            "Cannot find title of article in portrait ",
+            15
+
+    );
+
+    Assert.assertEquals("Article title have been changed after second screen rotate",
+            title_before_rotation, title_after_second_rotation);
+
+
+  }
+
+  @Test
+
+  public void testSearchArticleInBackGround() {
+    waitForElementAndClick(
+            By.id("org.wikipedia:id/search_container"),
+            "Cannot find 'Search wikipedia' input",
+            5);
+
+    String search_line = "Java";
+
+    waitForElementAndSendKeys(
+            By.xpath("//*[contains(@text,'Search…')]"),
+            search_line,
+            "cannot find search input",
+            5);
+
+
+  }
 
 
 
@@ -569,5 +739,33 @@ public class FirstTest {
             .moveTo(left_x, middle_y)
             .release()
             .perform();
+  }
+
+  private int getAmmountOfElements(By by) {
+    List elements = driver.findElements(by);
+    return elements.size();
+  }
+
+  private void assertElementNotPresent (By by, String error_message) {
+    int amount_of_elements = getAmmountOfElements(by);
+    if (amount_of_elements > 0) {
+      String default_message = "An element '" + by.toString() + "' supposed to be not present";
+      throw new AssertionError(default_message + " " + error_message);
+    }
+  }
+
+  private void assertElementPresent (By by, String error_message) {
+    int amount_of_elements = getAmmountOfElements(by);
+    if (amount_of_elements != 1) {
+      String default_message = "An element '" + by.toString() + "' supposed to be not present";
+      throw new AssertionError(default_message + " " + error_message);
+    }
+  }
+
+
+  private String waitForElementAndGetAttribute(By by, String attribute, String error_message, long timeoutInSeconds)
+  {
+    WebElement element = waitForElementPresent(by, error_message, timeoutInSeconds);
+    return element.getAttribute(attribute);
   }
 }

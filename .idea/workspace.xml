@@ -29,8 +29,8 @@
       <file leaf-file-name="MainClassTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainClassTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+            <state relative-caret-position="465">
+              <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,8 +51,8 @@
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="487" column="3" lean-forward="true" selection-start-line="487" selection-start-column="3" selection-end-line="487" selection-end-column="3" />
+            <state relative-caret-position="447">
+              <caret line="755" column="0" lean-forward="false" selection-start-line="755" selection-start-column="0" selection-end-line="755" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,6 +96,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="78" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="810" />
@@ -116,7 +117,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -149,6 +149,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,27 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.saveTwoArticleToMyList">
-    <configuration name="FirstTest.saveFirstArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="mobile_automation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="saveFirstArticleToMyList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
+  <component name="RunManager" selected="JUnit.FirstTest.testElementWithTitle">
     <configuration name="FirstTest.saveTwoArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="mobile_automation" />
@@ -210,14 +191,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FirstTest.testSearchAndCancel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testAmountOfEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="mobile_automation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testSearchAndCancel" />
+      <option name="METHOD_NAME" value="testAmountOfEmptySearch" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -230,14 +211,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FirstTest.testSearchItemPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testAmountOfNotEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="mobile_automation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testSearchItemPresent" />
+      <option name="METHOD_NAME" value="testAmountOfNotEmptySearch" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -250,14 +231,34 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="FirstTest.testSwipeArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="mobile_automation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testSwipeArticle" />
+      <option name="METHOD_NAME" value="testChangeScreenOrientationOnSearchResults" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="FirstTest.testElementWithTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="mobile_automation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testElementWithTitle" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -351,19 +352,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest.testSearchAndCancel" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.testSearchItemPresent" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.testSwipeArticle" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTest.saveFirstArticleToMyList" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTest.saveTwoArticleToMyList" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest.saveTwoArticleToMyList" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTest.testElementWithTitle" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest.saveTwoArticleToMyList" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.saveFirstArticleToMyList" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.testSwipeArticle" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTest.testSearchAndCancel" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTest.testSearchItemPresent" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest.testElementWithTitle" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTest.saveTwoArticleToMyList" />
       </list>
     </recent_temporary>
   </component>
@@ -384,35 +385,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_saveTwoArticleToMyList - 2018.10.25 at 09h 34m 40s.xml">
-      <configuration name="FirstTest.saveTwoArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_testElementWithTitle - 2018.10.25 at 13h 30m 08s.xml">
+      <configuration name="FirstTest.testElementWithTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticleToMyList - 2018.10.25 at 09h 44m 20s.xml">
-      <configuration name="FirstTest.saveTwoArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_testElementWithTitle - 2018.10.25 at 14h 06m 22s.xml">
+      <configuration name="FirstTest.testElementWithTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticleToMyList - 2018.10.25 at 09h 57m 38s.xml">
-      <configuration name="FirstTest.saveTwoArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_testElementWithTitle - 2018.10.25 at 14h 07m 31s.xml">
+      <configuration name="FirstTest.testElementWithTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticleToMyList - 2018.10.25 at 10h 02m 56s.xml">
-      <configuration name="FirstTest.saveTwoArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_testElementWithTitle - 2018.10.25 at 14h 09m 44s.xml">
+      <configuration name="FirstTest.testElementWithTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticleToMyList - 2018.10.25 at 10h 05m 20s.xml">
-      <configuration name="FirstTest.saveTwoArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_testElementWithTitle - 2018.10.26 at 14h 07m 53s.xml">
+      <configuration name="FirstTest.testElementWithTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticleToMyList - 2018.10.25 at 10h 09m 05s.xml">
-      <configuration name="FirstTest.saveTwoArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_testElementWithTitle - 2018.10.26 at 14h 08m 58s.xml">
+      <configuration name="FirstTest.testElementWithTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticleToMyList - 2018.10.25 at 10h 10m 27s.xml">
-      <configuration name="FirstTest.saveTwoArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_testElementWithTitle - 2018.10.26 at 14h 10m 30s.xml">
+      <configuration name="FirstTest.testElementWithTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticleToMyList - 2018.10.25 at 10h 17m 11s.xml">
-      <configuration name="FirstTest.saveTwoArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_testElementWithTitle - 2018.10.26 at 14h 12m 09s.xml">
+      <configuration name="FirstTest.testElementWithTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticleToMyList - 2018.10.25 at 10h 19m 25s.xml">
-      <configuration name="FirstTest.saveTwoArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_testElementWithTitle - 2018.10.26 at 14h 14m 35s.xml">
+      <configuration name="FirstTest.testElementWithTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticleToMyList - 2018.10.25 at 10h 20m 48s.xml">
-      <configuration name="FirstTest.saveTwoArticleToMyList" configurationId="JUnit" />
+    <history-entry file="FirstTest_testElementWithTitle - 2018.10.26 at 20h 17m 32s.xml">
+      <configuration name="FirstTest.testElementWithTitle" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -431,8 +432,7 @@
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32285368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22174536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22460657" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -444,6 +444,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -451,11 +452,47 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainClassTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_automation.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9615">
+          <caret line="641" column="15" lean-forward="false" selection-start-line="641" selection-start-column="15" selection-end-line="641" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -594,8 +631,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainClassTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        <state relative-caret-position="465">
+          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -604,8 +641,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="487" column="3" lean-forward="true" selection-start-line="487" selection-start-column="3" selection-end-line="487" selection-end-column="3" />
+        <state relative-caret-position="447">
+          <caret line="755" column="0" lean-forward="false" selection-start-line="755" selection-start-column="0" selection-end-line="755" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
