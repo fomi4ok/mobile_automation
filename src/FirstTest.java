@@ -34,6 +34,8 @@ public class FirstTest {
 
     driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
+    driver.rotate(ScreenOrientation.PORTRAIT);
+
   }
   @After
   public void tearDown() {
@@ -607,6 +609,8 @@ public class FirstTest {
 
     );
 
+
+
     Assert.assertEquals("Article title have been changed after screen rotate", title_before_rotation, title_after_rotation);
 
     driver.rotate(ScreenOrientation.PORTRAIT);
@@ -641,6 +645,21 @@ public class FirstTest {
             search_line,
             "cannot find search input",
             5);
+
+    waitForElementPresent(
+            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+            "cannot find 'Object-oriented programming language' searching by 'java'",
+            5);
+
+    driver.runAppInBackground(2);
+
+
+    waitForElementPresent(
+            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+            "cannot find article after returning from background",
+            5);
+
+
 
 
   }
