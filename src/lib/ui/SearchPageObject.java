@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 
 import static org.junit.Assert.assertTrue;
 
-public class SearchPageObject extends MainPageObject {
+abstract public class SearchPageObject extends MainPageObject {
 
 
   public SearchPageObject(AppiumDriver driver) {
@@ -14,15 +14,15 @@ public class SearchPageObject extends MainPageObject {
     super(driver);
   }
 
-  private static final String
-          SEARCH_INIT_ELEMENT = "xpath://*[contains(@text,'Search Wikipedia')]",
-          SEARCH_INPUT = "xpath://*[contains(@text,'Search…')]",
-          SEARCH_RESULT_BY_SUBSTRING_TPL = "xpath://*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='{SUBSTRING}']",
-          SEARCH_CANCEL_BUTTON = "id:org.wikipedia:id/search_close_btn",
-          SEARCH_RESULT_ELEMENT = "xpath://*[@resource-id='org.wikipedia:id/search_results_list']/*[@resource-id='org.wikipedia:id/page_list_item_container']",
-          SEARCH_EMPTY_RESULT_ELEMENT = "xpath://*[@text='No results found']",
-          SEARCH_TITLE_DESCRIPTION_ELEMENT = "xpath://*[android.widget.TextView[@index=0 and @text='{TITLE}'] and android.widget.TextView[@index=1 and @text='{DESCRIPTION}']]",
-          SEARCH_ARTICLES_RETURNED_ELEMENT = "id:org.wikipedia:id/page_list_item_title";
+   protected static String
+          SEARCH_INIT_ELEMENT,
+          SEARCH_INPUT,
+          SEARCH_RESULT_BY_SUBSTRING_TPL,
+          SEARCH_CANCEL_BUTTON,
+          SEARCH_RESULT_ELEMENT,
+          SEARCH_EMPTY_RESULT_ELEMENT,
+          SEARCH_TITLE_DESCRIPTION_ELEMENT,
+          SEARCH_ARTICLES_RETURNED_ELEMENT;
 
 
   //templates methods
@@ -59,7 +59,7 @@ public class SearchPageObject extends MainPageObject {
 
   public void waitForElementByTitleAndDescription(String title, String description) {
     String search_title_desc_xpath = getResultSearchElementBy(title, description);
-    this.waitForElementPresent(search_title_desc_xpath , "Cannot find and click searched result with title " + title + "and description  " + description, 15);
+    this.waitForElementPresent(search_title_desc_xpath , "Cannot find and click searched result with title " + title + "and description  " + description, 25);
   }
 
 
